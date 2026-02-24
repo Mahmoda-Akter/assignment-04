@@ -79,8 +79,8 @@ function togglebtn(id) {
     } else if (id == "all-filter-btn") {
         allcard.classList.remove("hidden");
         interviewsection.classList.add("hidden")
-        let allbtncounter = totle.innerText = allcard.children.length;
-        totlecount.innerText = allbtncounter;
+         let allbtncounter = totle.innerText = allcard.children.length;
+         totlecount.innerText = allbtncounter;
     } else if (id = "rejected-filter-btn") {
         allcard.classList.add("hidden");
         interviewsection.classList.remove("hidden")
