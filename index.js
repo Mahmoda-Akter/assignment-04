@@ -23,6 +23,7 @@ console.log(allcard)
 totle.innerText = allcard.children.length;
 totlecount.innerText = allcard.children.length
 
+// delete button code here
 deletebtn.forEach(function (btnn) {
     btnn.addEventListener("click", function () {
         let a = btnn.parentNode.parentNode;
@@ -40,8 +41,8 @@ deletebtn.forEach(function (btnn) {
 let maincontainer = document.querySelector('main');
 
 let interviewsection = document.getElementById("interview-section")
-// console.log(maincontainer)
 
+// counter code here
 function counter() {
     totle.innerText = allcard.children.length;
     
@@ -51,7 +52,7 @@ function counter() {
 
 }
 
-
+// toggle function here
 function togglebtn(id) {
     allfilterbtn.classList.remove('bg-[#3B82F6]', 'text-white')
     interviewfilterbtn.classList.remove('bg-[#3B82F6]', 'text-white')
@@ -94,14 +95,15 @@ function togglebtn(id) {
 
 
 }
+
+// interview button code here
 maincontainer.addEventListener('click', function (event) {
-    // console.log(event.target.parentNode.parentNode)
-    // console.log(event.target.classList.contains('intervew-btn'))
+    
     if (event.target.classList.contains('intervew-btn')) {
         const parentNode = event.target.parentNode.parentNode;
         let c = interview.innerText = interviewitem.length;
         console.log(c)
-        totlecount.innerText = c;
+        
         const companyname = parentNode.querySelector('.companyname').innerText;
         const fildname = parentNode.querySelector('.fild-name').innerText;
         const time = parentNode.querySelector('.time').innerText;
@@ -124,7 +126,7 @@ maincontainer.addEventListener('click', function (event) {
 
         rejecteditem = rejecteditem.filter(item => item.companyname != cardobj.companyname)
 
-        counter()
+         counter()
         if (currentstutes == "rejected-filter-btn") {
             randerreject();
         }
@@ -166,6 +168,7 @@ maincontainer.addEventListener('click', function (event) {
 
 })
 
+// render function here
 function randerinterview() {
     interviewsection.innerHTML = ''
 
