@@ -72,8 +72,8 @@ function togglebtn(id) {
     if (id == 'interview-filter-btn') {
         allcard.classList.add("hidden");
         interviewsection.classList.remove("hidden");
-        let inte = interview.innerText = interviewitem.length;
-        totlecount.innerText = inte;
+         let inte = interview.innerText = interviewitem.length;
+         totlecount.innerText = inte;
         randerinterview();
 
     } else if (id == "all-filter-btn") {
