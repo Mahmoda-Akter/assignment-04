@@ -12,9 +12,9 @@
 </head>
 
 <body class=" bg-gray-100">
-    <header class=" w-[70%]  mx-auto">
+    <header class=" sm: w-[100%] lg:w-[70%]  mx-auto">
         <h1 class="text-3xl mt-10">Job Application Tracker</h1>
-        <div id="div-container" class="grid grid-cols-3 gap-8">
+        <div id="div-container" class="grid grid-cols-3 gap-8 mt-5">
             <div class="bg-white p-4">
                 <p>Totle</p>
                 <p id="totle" class="text-black font-semibold text-2xl">0</p>
@@ -40,7 +40,7 @@
         </section>
     </header>
 
-    <main class=" w-[70%]  mx-auto">
+    <main class="sm:w-[100%] lg:w-[70%]  mx-auto">
         <div>
             <button onclick="togglebtn('all-filter-btn')" id="all-filter-btn" class="bg-[#3B82F6] text-white px-3.5 py-2.5">all</button>
             <button onclick="togglebtn('interview-filter-btn')" id="interview-filter-btn" class="bg-gray-300 px-3.5 py-2.5">interview</button>
@@ -55,8 +55,8 @@
         <section id="allcards">
             <div class="card interview flex justify-between bg-white  mt-10">
                 <div class="space-y-6 p-10">
-                    <div>
-                        <p class="companyname text-2xl text-[#002C5C] font-semibold">Mobile First Corp</p>
+                    <div >
+                        <p class="companyname sm:mr-1.5 lg:text-2xl text-[#002C5C] font-semibold">Mobile First Corp</p>
                         <p class="fild-name text-gray-500">React Native Developer</p>
                         <p class="time text-gray-500 mt-3">Remote• Full-time •$130,000 - $175,000</p>
                     </div>
