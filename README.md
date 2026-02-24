@@ -20,6 +20,7 @@ event delegation is a event handling tachnicqe
 it's usefull because we do not need to add  addEventListner() again and aganin thai is whay  code clear and reduce redundenty in our program
 
 //5. What is the difference between preventDefiault() and stopPropagation() methods?
+
 preventDefault() : to stop browser default vehavior .
 stopPropagation() : to stop a targeted element to going  his parentNode.
 
