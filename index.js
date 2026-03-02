@@ -5,6 +5,7 @@ let currentstutes = "all";
 let totle = document.getElementById("totle");
 
 let interview = document.getElementById("interview");
+console.log(interview)
 let rejected = document.getElementById("rejected");
 let totlecount = document.getElementById("totle-count")
 
@@ -48,6 +49,16 @@ function counter() {
     
     interview.innerText = interviewitem.length;
     rejected.innerText = rejecteditem.length;
+
+    if (currentstutes == 'interview-filter-btn'){
+        totlecount.innerText=interviewitem.length;
+    }
+    else if(currentstutes ==="rejected-filter-btn"){
+        totlecount.innerText=rejecteditem.length;
+    }
+    else{
+        totlecount.innerText=allcard.children.length;
+    }
     // totlecount.innerText=allcard.children.length
 
 }
@@ -75,6 +86,7 @@ function togglebtn(id) {
         interviewsection.classList.remove("hidden");
          let inte = interview.innerText = interviewitem.length;
          totlecount.innerText = inte;
+         console.log(inte)
         randerinterview();
 
     } else if (id == "all-filter-btn") {
@@ -82,7 +94,7 @@ function togglebtn(id) {
         interviewsection.classList.add("hidden")
          let allbtncounter = totle.innerText = allcard.children.length;
          totlecount.innerText = allbtncounter;
-    } else if (id = "rejected-filter-btn") {
+    } else if (id == "rejected-filter-btn") {
         allcard.classList.add("hidden");
         interviewsection.classList.remove("hidden")
         let rejectcounter = rejected.innerText = rejecteditem.length;
@@ -101,8 +113,8 @@ maincontainer.addEventListener('click', function (event) {
     
     if (event.target.classList.contains('intervew-btn')) {
         const parentNode = event.target.parentNode.parentNode;
-        let c = interview.innerText = interviewitem.length;
-        console.log(c)
+        // let c = interview.innerText = interviewitem.length;
+        // console.log(c)
         
         const companyname = parentNode.querySelector('.companyname').innerText;
         const fildname = parentNode.querySelector('.fild-name').innerText;
